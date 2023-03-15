@@ -1,0 +1,65 @@
+2
+
+
+In Jenkins, go to Manage Jenkins > Global Tool Configuration > Git. There, determine the path to git.exe from just that to something like C:\Program Files\Git\bin\git.exe—or wherever you have your git.exe file.
+
+Share
+Improve this answer
+Follow
+edited May 11, 2022 at 0:36
+Jeremy Caney's user avatar
+Jeremy Caney
+6,8915656 gold badges4848 silver badges7575 bronze badges
+answered May 10, 2022 at 11:27
+Arttu's user avatar
+Arttu
+2122 bronze badges
+Add a comment
+
+0
+
+
+I too had the same error. Please use Java Version 11 instead of Java Version 8. Also, install only the suggested plugins for Git.
+
+Share
+Improve this answer
+Follow
+edited Aug 7, 2022 at 18:30
+Jeremy Caney's user avatar
+Jeremy Caney
+6,8915656 gold badges4848 silver badges7575 bronze badges
+answered Aug 4, 2022 at 13:53
+Krishna's user avatar
+Krishna
+1
+What are the suggested plugins for git? – 
+Jeremy Caney
+ Aug 7, 2022 at 18:31
+Add a comment
+
+0
+
+
+You better check out your Manage Jenkins -> Global Tool Configuration. There you need to look at your JAVA_HOME value and the Path to Git executable. I'm using the Docker image with these values:
+
+JAVA_HOME: /opt/java/openjdk
+Path to Git executable: git
+Share
+Improve this answer
+Follow
+edited Jan 27 at 16:41
+answered Jan 25 at 1:56
+B612's user avatar
+B612
+122 bronze badges
+Add a comment
+Your Answer
+Sign up or log in
+Post as a guest
+Name
+Email
+Required, but never shown
+
+By clicking “Post Your Answer”, you agree to our terms of service, privacy policy and cookie policy
+
+Not the answer you're looking for? Browse other questions tagged githubjenkinshttp-status-code-500 or ask your own question.
